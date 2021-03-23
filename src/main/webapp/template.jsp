@@ -10,11 +10,10 @@
 
     <title>Content</title>
   </head>
-  <body>
-    <script> 
+  <script> 
         function getParameters() { 
             let urlString = window.location.href
-  
+  			console.log(urlString);
             let paramString = urlString.split('?')[1]; 
               
             let queryString = new URLSearchParams(paramString); 
@@ -25,6 +24,8 @@
             } 
         } 
     </script> 
+  <body>
+    here
 
 
 
