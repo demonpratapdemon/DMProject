@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<admission>
+	<element name="Programmes_Offered"></element>
+	<element name="Duration"></element>
+	<element name="Eligibility"></element></admission>
