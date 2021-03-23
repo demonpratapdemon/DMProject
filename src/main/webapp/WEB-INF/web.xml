@@ -10,8 +10,18 @@
   	<description></description>
   	<servlet-class>Servlets.admission</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>AdmissionServlet</servlet-name>
+  	<display-name>AdmissionServlet</display-name>
+  	<description></description>
+  	<servlet-class>servlets.AdmissionServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>admission</servlet-name>
   	<url-pattern>/admission</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AdmissionServlet</servlet-name>
+  	<url-pattern>/AdmissionServlet</url-pattern>
   </servlet-mapping>
 </web-app>
