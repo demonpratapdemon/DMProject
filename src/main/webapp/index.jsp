@@ -30,15 +30,12 @@
 			<h5 class="card-title">Template for admission</h5>
 			<p class="card-text">With supporting text below as a natural
 				lead-in to additional content.</p>
-			<%
-				
-			%>
 			<!-- <a href="template.jsp?template=template1.xml" class="btn btn-primary">Select</a> -->
 
 			<form action="AdmissionServlet" method="post">
 				<!-- <input type="submit" name="admissions" class="btn btn-primary"
 					value="Check"> -->
-				<input id="btn" type="submit" value="Login" />
+				<input id="btn" type="submit" value=Submit class="btn btn-primary"/>
 				<input type="hidden" id="template" name = "template" value="Admissions.xml">
 			</form>
 			
