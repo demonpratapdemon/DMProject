@@ -11,13 +11,13 @@ import Transform.Transform;
 /**
  * Servlet implementation class AdmissionServlet
  */
-public class AdmissionServlet extends HttpServlet {
+public class ContentAdminServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public AdmissionServlet() {
+	public ContentAdminServlet() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -42,11 +42,9 @@ public class AdmissionServlet extends HttpServlet {
 		try {
 			String template = request.getParameter("template");
 			System.out.println(template);
-			String path = Transform.transform("xml/Admissions.xml", "xslt/sample.xsl", "Admissions.html");
-			String path1 = Transform.transform("xml/static.xml", "xslt/ContentAdmin.xsl", "ContentAdmissions.html");
+			String path = Transform.transform("xml/static.xml", "xslt/ContentAdmin.xsl", "ContentAdmissions.html");
 			System.out.println(path);
-			System.out.println(path1);
-			response.sendRedirect("Admissions.html");
+			response.sendRedirect("ContentAdmissions.html");
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
