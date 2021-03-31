@@ -33,11 +33,10 @@
                     var el=document.createElement("ELEMENT");
 
                     if (inputs[i].id){
-<!--                    console.log(inputs[i]);-->
-<!--                    console.log(CKEDITOR.instances[inputs[i].id].getData());-->
-
+					trial = String(CKEDITOR.instances[inputs[i].id].getData());
+					trial = trial.replace(/>/g, "&gt;");
+					console.log(trial);
                     el.setAttribute("name",inputs[i].name);
-<!--                    var valueData = -->
                     el.setAttribute("value",CKEDITOR.instances[inputs[i].id].getData());
                     xmldata.push(el.outerHTML);
                     }

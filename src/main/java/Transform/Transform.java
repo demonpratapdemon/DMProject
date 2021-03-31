@@ -46,7 +46,11 @@ public class Transform {
 		transformer.transform(new DOMSource(xmlDocument), new StreamResult(stringWriter));
 
 		// write to file
+
 		String path = "E:\\New_Workspace\\DMProject\\src\\main\\webapp\\" + filename;
+
+		
+
 		File file = new File(path);
 		if (!file.exists()) {
 			file.createNewFile();
@@ -56,7 +60,7 @@ public class Transform {
 		BufferedWriter bw = new BufferedWriter(fw);
 		bw.write(stringWriter.toString());
 		bw.close();
-		return file.getPath();
+		return file.getAbsolutePath();
 	}
 
 }
