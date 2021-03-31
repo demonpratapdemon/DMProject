@@ -42,8 +42,10 @@ public class AdmissionServlet extends HttpServlet {
 		try {
 			String template = request.getParameter("template");
 			System.out.println(template);
-			String path = Transform.transform("xml/Admissions.xml", "xslt/sample.xsl");
+			String path = Transform.transform("xml/Admissions.xml", "xslt/sample.xsl", "Admissions.html");
+			String path1 = Transform.transform("xml/static.xml", "xslt/ContentAdmin.xsl", "ContentAdmissions.html");
 			System.out.println(path);
+			System.out.println(path1);
 			response.sendRedirect("Admissions.html");
 		} catch (Exception e) {
 			// TODO: handle exception

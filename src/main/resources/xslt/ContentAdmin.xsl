@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
+
+	
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
         <html>
@@ -7,7 +9,6 @@
                 <b>Admissions Template</b>
                 <script
                         src="https://cdn.ckeditor.com/4.11.1/standard/ckeditor.js"/>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"/>
             </head>
             <body>
                 <!-- <xsl:for-each select="form/element"> <xsl:value-of select="@name"
@@ -43,4 +44,5 @@
             </body>
         </html>
     </xsl:template>
+
 </xsl:stylesheet>

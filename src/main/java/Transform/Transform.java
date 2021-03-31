@@ -31,7 +31,7 @@ import org.xml.sax.SAXException;
  */
 public class Transform {
 
-	public static String transform(final String xml, final String xslt) throws SAXException, IOException,
+	public static String transform(final String xml, final String xslt, String filename) throws SAXException, IOException,
 			ParserConfigurationException, TransformerFactoryConfigurationError, TransformerException {
 
 		ClassLoader classloader = Transform.class.getClassLoader();
@@ -46,7 +46,11 @@ public class Transform {
 		transformer.transform(new DOMSource(xmlDocument), new StreamResult(stringWriter));
 
 		// write to file
-		String path =  "//DMProject//src//main//webapp//Admissions.html";
+
+		String path = "E:\\New_Workspace\\DMProject\\src\\main\\webapp\\" + filename;
+
+		
+
 		File file = new File(path);
 		if (!file.exists()) {
 			file.createNewFile();
