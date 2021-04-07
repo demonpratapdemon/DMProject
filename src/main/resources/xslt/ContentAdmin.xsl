@@ -32,7 +32,16 @@
                         console.log(z);
                         for (let i = 0; i &lt; z; i++) {
 
-                        CKEDITOR.replace(document.getElementById(i), {readOnly:true});
+                        value =
+                        document.getElementById(i).value;
+                        editInstance = CKEDITOR.replace(document.getElementById(i), {readOnly:true});
+                        <!-- CKEDITOR.instances[editInstance].setData(value); -->
+                        <![CDATA[
+		                    value = value.replaceAll('&lt;', '<');
+		                    value = value.replaceAll('&gt;', '>');
+		 				]]>
+                        console.log(value);
+                        editInstance.setData(value);
                         }
                         }
 
