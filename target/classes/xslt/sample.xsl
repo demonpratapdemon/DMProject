@@ -33,11 +33,14 @@
                     var el=document.createElement("ELEMENT");
 
                     if (inputs[i].id){
-					trial = String(CKEDITOR.instances[inputs[i].id].getData());
-					trial = trial.replace(/>/g, "&gt;");
-					console.log(trial);
                     el.setAttribute("name",inputs[i].name);
-                    el.setAttribute("value",CKEDITOR.instances[inputs[i].id].getData());
+                    value = CKEDITOR.instances[inputs[i].id].getData();
+                    <![CDATA[
+                    value = value.replaceAll('<', '&lt;');     
+                    value = value.replaceAll('>','&gt;');              
+ 					]]>
+ 					console.log('Final Value =', value);
+                    el.setAttribute("value",value);
                     xmldata.push(el.outerHTML);
                     }
                     }
