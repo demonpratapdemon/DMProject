@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,34 +9,31 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-	
-	 
 
-    <title>Home</title>
+    <title>Login Page</title>
   </head>
   <body>
-  
-  <div class="text-center">
-    <h1 class="display-1" style="color:Tomato;">Welcome To DM Project</h1>
-  	<br>
-  	<p class="display-6" style="color:DarkMagenta;">Pratap Kumar Chandra (MT2020155)
-  	Kanchan Mahajan (MT2020044)
-  	Tushar Shaily (MT2020031)
-  	Satpalsingh Jaspalsingh Ghunia (MT2020138)
-  	Tanishq Agarwal (MT2020032)</p>
-  	<br><br><br><br><br>
-  	<h2 class="display-3" style="color:Chartreuse;">Content Management with Templates</h2>
-  	<p></p>
-  	<br><br><br><br><br>
-    <div class="container">
-    	<a href="Login.jsp"> Start </a>
-    </div>
-    
-   </div>
-    
-    
-    
-    
+    <form action="LoginDetailsServlet" method="post">
+  <div class="container text-center">
+    <label for="email_address" class="form-label">Email address</label>
+    <input name = "email" required 
+    	type="text" id="email" placeholder="Enter Valid Email Address" >
+  </div>
+  <div class="container text-center">
+  	 <label for="pwd" class="form-label">Password</label>
+<input type="password" id="pwd" name="pwd" placeholder="Enter Password"> 
+  </div>
+ 
+ 	<div class="container text-center">
+  		<button type="submit" class="btn btn-primary">Submit</button>
+	</div>
+	
+	<div class="container text-center">
+	<button class="btn btn-info ml-2" onclick="location.href='Registration.jsp'">Register</button>
+	
+                </div>
+	
+</form>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

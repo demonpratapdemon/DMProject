@@ -4,6 +4,7 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  
   <servlet>
   	<servlet-name>admission</servlet-name>
   	<display-name>admission</display-name>
@@ -15,6 +16,18 @@
   	<display-name>AdmissionServlet</display-name>
   	<description></description>
   	<servlet-class>servlets.AdmissionServlet</servlet-class>
+  </servlet>
+  <servlet>
+  <servlet-name>LoginDetailsServlet</servlet-name>
+  <display-name>LoginDetailsServlet</display-name>
+  <description></description>
+  <servlet-class>servlets.LoginDetailsServlet</servlet-class>
+  </servlet>
+  <servlet>
+  <servlet-name>RegistrationServlet</servlet-name>
+  <display-name>RegistrationServlet</display-name>
+  <description></description>
+  <servlet-class>servlets.RegistrationServlet</servlet-class>
   </servlet>
   <servlet>
   	<servlet-name>ContenAdminServlet</servlet-name>
@@ -34,4 +47,14 @@
   	<servlet-name>ContenAdminServlet</servlet-name>
   	<url-pattern>/ContenAdminServlet</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LoginDetailsServlet</servlet-name>
+  	<url-pattern>/LoginDetailsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>RegistrationServlet</servlet-name>
+  	<url-pattern>/RegistrationServlet</url-pattern>
+  </servlet-mapping>
+ 
+  
 </web-app>
