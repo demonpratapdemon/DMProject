@@ -38,7 +38,7 @@
 				<input id="btn" type="submit" value=Submit class="btn btn-primary"/>
 				<input type="hidden" id="template" name = "template" value="Admissions.xml">
 			</form> -->
-			<a href="ContentAdmissions.html" class="btn btn-primary">View</a>
+			<a href="../DMProject/trail.html" class="btn btn-primary">View</a>
 
 			<form name="UploadForm" action="ContenAdminServlet" method="post"
 				enctype="multipart/form-data">

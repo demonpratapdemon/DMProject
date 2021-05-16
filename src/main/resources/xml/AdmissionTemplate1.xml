@@ -1,0 +1,7 @@
+﻿<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	name="into">
+	<section name="Programs Offered" row="1" col="1" value=""></section>
+	<section name="Duration" row="1" col="2" value=""></section>
+	<section name="Eligibility" row="2" col="1" value=""></section>
+</template>
